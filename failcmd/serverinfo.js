@@ -16,7 +16,7 @@ let idle = message.guild.members.cache.filter(a => a.presence.status == "idle").
 
 let off = message.guild.members.cache.filter(a => a.presence.status == "offline").size;
 
-let live = message.guild.members.cache.filter(a => a.presence.status == "steam").size;
+let live = message.guild.members.cache.filter(a => a.presence.status == "stream").size;
 
 let channel = message.guild.channels.cache.size;
 

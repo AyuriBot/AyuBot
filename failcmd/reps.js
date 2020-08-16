@@ -4,10 +4,13 @@ const db = require('quick.db');
 module.exports.run = (client, message, args) => {     
   
   let usermen = message.mentions.users.first() ||  message.guild.members.cache.get(args[0]) || message.author;
-	let val = db.get(`repvr_${usermen}`);  
+	let val = db.get(`repvr_${usermen}`);
+	if (val === null) {
+	val = 0
+	}
 	db.add(`repvr_${usermen}_${usermen}`, 0);
 	const embed = new Discord.MessageEmbed()
-		.setTitle('Reputaçoes 😁👌')
+		.setTitle('Reputações 😁👌')
 		.setDescription(`**${usermen} contém ${val} reputações** `)
 		.setColor('RANDOM')
 	message.channel.send(embed);

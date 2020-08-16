@@ -20,7 +20,7 @@ db.subtract(`Money_${message.author.id}`, args[1])
 //estará subtraindo o money de quem usou o comando
 
   const embed = new Discord.MessageEmbed()
-  .setDescription(`**${message.author} doou  a quantia dé<:nikkk:739995169671217203>${args[1]} para o usuário ${usermen.username}**`)
+  .setDescription(`**${message.author} doou  a quantia de <:nikkk:739995169671217203>${args[1]} para o usuário ${usermen.username}**`)
    .setColor('RANDOM')
   message.channel.send(embed)
   
