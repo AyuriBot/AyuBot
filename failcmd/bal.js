@@ -12,7 +12,7 @@ if(money === null) money = 0
 
 const embed = new Discord.MessageEmbed()
  .setTitle('Banco 💴')
-.setDescription(`**O banco dé ${userm.username} contém, a quantia dé <:nikkk:739995169671217203>${money}**`)
+.setDescription(`**O usuário ${userm.username} contém a quantia de <:nikkk:739995169671217203>${money}**`)
 .setColor('#87CEEB')
 
 
