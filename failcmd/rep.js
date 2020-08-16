@@ -18,9 +18,8 @@ db.add(`repvr_${usermen}`, 1)
   
   const embed2 = new Discord.MessageEmbed()
    .setTitle('Presetinho 🎁')
-  .setDescription(`**Minha nossa paresse que um usuário le deu uma reputação 👌 e o nome dele é ${message.author}, agradeça ele(a) 😁**`)
+  .setDescription(`**Minha nossa paresse que um usuário lhe deu uma reputação e o nome dele é ${message.author}, agradeça ele(a) 😁**`)
   .setColor('RANDOM')
   usermen.send(embed2)
   message.channel.send(embed)
 }
-
