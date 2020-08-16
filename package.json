@@ -1,0 +1,38 @@
+{
+  "name": "Um-projeto-secreto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dblapi.js": "^2.4.0",
+    "discord": "^0.8.2",
+    "discord.js": "^12.3.0",
+    "dotenv": "^8.2.0",
+    "dotenv-flow": "^3.1.0",
+    "ejs": "^3.1.3",
+    "enmap": "^5.3.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "jimp": "^0.13.0",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.3.2",
+    "npm": "^6.14.5",
+    "passport": "^0.4.1",
+    "passport-oauth2": "^1.5.0",
+    "quick": "0.0.6",
+    "quick.db": "^7.1.1",
+    "screenshot-web": "0.0.1",
+    "simple-youtube-api": "^5.2.1",
+    "snekfetch": "^4.0.4",
+    "soundcloud-downloader": "^0.1.3",
+    "superagent": "^5.2.2",
+    "ytdl-core": "^3.2.0"
+  }
+}

@@ -1,0 +1,93 @@
+<title>Daily</title>
+<head>
+	<meta property="og:title" content="Site Ayuri">
+	<meta property="og:description" content= "Site oficial da Ayuri Bot!">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></head>
+<style>
+	body {
+		background: #2C2F33;
+		color: white;
+		margin: 0;
+		font-family: ROBOTO Sans-Serif;
+	}
+	.img {
+		border-radius: 100%;
+		width: 100px;
+		height: 100px;
+	}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background: grey;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.bt {
+	
+	width: 100px;
+  height: 40px;
+  background: black;
+  color: white;
+  transition: width 2s linear 1s;
+
+}
+.bt:hover {
+	width: 300px;
+}
+</style>
+
+<body>
+	<ul>
+		
+		<li><a href="/">Início</a></li>
+		<%if(logged) {%><li> <img src="<%=avatar%>" style="width: 80px; height: 80px; border-radius: 100%;"></li>
+		<li><a href="/logout">Sair</a></li><%}%>
+<%if(!logged) { %><li><a href="login">Login</a></li><%}%>
+	</ul>
+	<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+		
+	<h1>	Olá <%=name%> Bem vindo ao Site da Ayu</h1>
+	<br>
+<%if(logged) {%><img class="img" src="<%=avatar%>"></img>
+<h3><%=name%></h3>
+<br>
+<br>
+<br>
+Você tem:  <h2><%=ganh%></h2> ayCoins
+
+<h3>Pegar Daily?</h3>
+<button class="bt" onclick="window.location.href = '/daily';">Pegar prêmio</button>
+
+<%}%>
+
+<%if(!logged) {%>
+Para pegar o prêmio faça o <a href="/login">login</a>
+<%}%>
+
+<br>
+<br>
+<br>
+
+<center><h1>Avisos</h1>
+<%=site%></center>
+</div>
