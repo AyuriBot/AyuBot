@@ -10,7 +10,7 @@ module.exports.run = (client, message, args) => {
 	}
 	db.add(`repvr_${usermen}_${usermen}`, 0);
 	const embed = new Discord.MessageEmbed()
-		.setTitle('Reputaç~ees 😁👌')
+		.setTitle('Reputações 😁👌')
 		.setDescription(`**${usermen} contém ${val} reputações** `)
 		.setColor('RANDOM')
 	message.channel.send(embed);
