@@ -16,7 +16,7 @@ module.exports.run = (client, message, args) => {
      
 💰 **|** **Comandos de economia**
      
-⬅ **|** **Voltara  para o menu principal**`) 
+⬅ **|** **Voltar para o menu principal**`) 
 .setFooter('Meu prefixo é ay.')
       
     .setColor('#87CEEB')
